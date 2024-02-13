@@ -1,0 +1,101 @@
+body {
+    background-color: aqua;
+}
+
+header {
+    height: 165px;
+    background-color: #b8cb21;
+    display: flex;
+    justify-content: space-around;
+  margin: 20px;
+  }
+  .logo {
+   width: 100%;
+  }
+ /* CSS for Button */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  /* CSS for Button Hover Effect */
+  .button:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+  main {
+    margin: 20px;
+    height: 700px;
+  }
+  .box {
+    height: 150px;
+    width: 250px;
+    background-color: #2e3113;
+    text-align: center;
+    transition: background-color 2s linear , width 3s ease-in;
+    
+   
+  }
+  .box:hover {
+    background-color: burlywood;
+    width: 400px;
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+
+  }
+  .positionbox1 {
+    
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      position: relative;
+      animation: moveBox 2s infinite alternate;
+
+    }
+    
+    @keyframes moveBox {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(400px);
+      }
+    
+    }
+ 
+  .positionbox2 {
+    margin-top: 20px;
+    position: fixed;
+   height: 200px;
+    background-color: rgb(123, 111, 134);
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  .positionbox2 {
+    animation: pulse 2s infinite;
+  }
+
+ 
