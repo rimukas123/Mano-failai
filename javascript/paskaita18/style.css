@@ -1,0 +1,10 @@
+
+.container {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .container img {
+    width: 100px;
+  }
+  

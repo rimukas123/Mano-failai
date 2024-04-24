@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="game">
+        <p id="wordToGuess"></p>
+        <form id="guessForm">
+            <input type="text" id="letterInput" maxlength="1" required />
+            <button type="submit">Spėti</button>
+        </form>
+        <button id="newWordButton">Naujas žodis</button>
+        <p>Likę spėjimai: <span id="guessesLeft"></span></p>
+        <p>Jau spėtos raidės: <span id="guessedLetters"></span></p>
+        <div id="result"></div>
+    </div>
+    
+</body>
+</html>

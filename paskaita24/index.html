@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="alert(this.value)">
+        <option value="">Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+      <input type="text" id="input"> oninput: <span id="result"></span>
+<script>
+  input.oninput = function() {
+    result.innerHTML = input.value;
+  };
+</script>
+<input type="text" id="input">
+<script>
+  input.onpaste = function(event) {
+    alert("paste: " + event.clipboardData.getData('text/plain'));
+    event.preventDefault();
+  };
+
+  input.oncut = input.oncopy = function(event) {
+    alert(event.type + '-' + document.getSelection());
+    event.preventDefault();
+  };
+</script>
+<form onsubmit="alert('submit!');return false">
+    First: Enter in the input field <input type="text" value="text"><br>
+    Second: Click "submit": <input type="submit" value="Submit">
+  </form>
+
+  <form>
+    <input id="age" type="number" placeholder="Enter your age">
+    <button type="submit">Submit</button>
+  </form>
+  
+  <h1 id="price"></h1>
+
+
+  <form>
+	<input id="age" type="number" placeholder="Enter your age">
+  <label for="convicted">Have you been convicted?</label>
+  <input id="convicted"type="checkbox" >
+  <button type="submit">Submit</button>
+</form>
+
+<h1 id="result"></h1>
+</body>
+</html>
