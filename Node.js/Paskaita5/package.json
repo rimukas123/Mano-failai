@@ -1,5 +1,5 @@
 {
-  "name": "paskaita4",
+  "name": "paskaita5",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,16 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "uuid": "^9.0.1"
-  },
   "type": "module",
-  "devDependencies": {
-    "@eslint/js": "^9.2.0",
-    "eslint": "^9.2.0"
+  "dependencies": {
+    "express": "^4.19.2"
   }
-}
+
+
+
+
+
+
+
+
+
