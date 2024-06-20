@@ -5,10 +5,10 @@ import TodosContainer from "./components/TodosContainer/TodosContainer";
 
 function App() {
   const [todos, setTodos] = useState([]);
-
+const [todos,setTodos]=useState([])
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:4000/todo")
+      .get('')
       .then((response) => {
         setTodos(response.data)
       })
