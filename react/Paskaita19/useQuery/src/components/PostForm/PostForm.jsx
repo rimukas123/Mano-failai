@@ -10,7 +10,7 @@ export default function PostForm() {
 
   const queryClient = useQueryClient();
 
-  const { mutate, isError, error } = useMutation({
+  const { mutate, isError, } = useMutation({
     mutationFn: async (body) => {
       await axios.post(API_HOST, body);
     },
